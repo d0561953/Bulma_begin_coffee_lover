@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+  <title>Coffee_Lover</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body class="overflow-x: hidden">
+
+  <nav class="navbar is-white has-shadow">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="./images/cupdog.png" style="max-height: 80px" class="px-2">
+      </a>
+      <a class="navbar-burger has-background-grey-lighter" id="burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <!-- right links -->
+      <div class="navbar-end px-3">
+        <a class="navbar-item">My Account</a>
+        <a class="navbar-item">Shopping Cart (0)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- breadcrumbs -->
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="is-size-6 container">
+        <li><a href="#" class="has-text-grey">Coffee category</a></li>
+        <li><a href="#" class="has-text-grey">Shop</a></li>
+        <li class="is-active"><a href="#">Docker Dark Roast</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-3">
+          <h1 class="is-size-3-mobile is-size-1-desktop title">Coffee</h1>
+          <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
+        </div>
+        <div class="column is-size-8-mobile is-6-tablet is-5-desktop has-text-centered">
+          <figure class="image is-3by2">
+            <img src="./images/EAVA coffee.jpg" alt="coffee roasters" class="px-5 py-3">
+          </figure>
+        </div>
+        <div class="column is-12-tablet is-4-desktop ">
+          <div class="is-size-4 mb-4">NTD 80</div>
+          <p class="mb-4">Dark roast coffee is a dark brown color and often has an oily surface. 
+            These coffees have a low acidity, heavy body, and tend to reveal deeper, darker flavors. 
+            Coffees roasted to this level tend to not have many of their origin characteristics left, 
+            but that doesn't mean that these are bland and boring.
+          </p>
+        <!-- Option of coffee volume-->
+          <form>
+            <div class="field">
+              <div class="control mb-6">
+                <div class="select">
+                  <select>
+                    <option>Small (250g)</option>
+                    <option>Large (500g)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="button is-primary">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-7-tablet">
+          <!-- tabbed content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active" data-target="product-detail">
+                <a>Product Details</a>
+              </li>
+              <li data-target="delivery-information">
+                <a>Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="product-detail">
+              <h3 class="is-size-5 title">Product Details</h3>
+              <p>It's taste very good,it's a good product to try if you is a coffee lover.</p>
+            </div>
+            <div id="delivery-information" class="is-hidden">
+              <h3 class="is-size-5 title">Delivery Information</h3>
+              <p>Serve for TAICHUNG AREA ONLY.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="coulumn is-5-desktop ">
+          <!--message box-->
+          <div class="message mx-5 my-4">
+            <div class="message-header">
+              <p>Earn Point With The Coffee Club</p>
+            </div>
+            <div class="message-body">
+              <p>Facebook: Coffee_Lover. We also have instragram and twitter.
+                Give us like and supports is the greatest way to make us improve. 
+                Appreciate to all of you support our product.
+                Once again, thanks to all of you.
+              <br>Hasta Luego Chao!!!</p>
+              <div class="has-text-centered mt-5">
+                <button class="button" id="signup">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cards -->
+  <section class="section">
+    <div class="container">
+      <h3 class="title has-text-centered is-size-8">Related Product</h3>
+      <div class="columns mt-5 is-6-tablets has-text-centered is-multiline">
+        <div class="column is-4-tablets is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-2">
+              <img src="./images/cortado.png" alt="Cortardo Cup">
+            </div>
+            <div class="card-content">
+              <p>NTD 90</p>
+              <p class="title is-size-5">Cortado Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">Dismiss</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablets is-3-desktop ">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-2">
+              <img src="./images/Latte.jpg" alt="Latte Cup">
+            </div>
+            <div class="card-content">
+              <p>NTD 90</p>
+              <p class="title is-size-5">Latte Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">Dismiss</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablets is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-2">
+              <img src="./images/cappuccino.jpg" alt="Cappuccino Cup" >
+            </div>
+            <div class="card-content">
+              <p>NTD 90</p>
+              <p class="title is-size-5">Cappuccino Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">Dismiss</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablets is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6  pt-2">
+              <img src="./images/Americano.jpg" alt="Americano Cup">
+            </div>
+            <div class="card-content">
+              <p>NTD 90</p>
+              <p class="title is-size-5	">Americano Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">Dismiss</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablets is-3-desktop ">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-2">
+              <img src="./images/Ristretto.png" alt="Ristretto Cup">
+            </div>
+            <div class="card-content">
+              <p>NTD 90</p>
+              <p class="title is-size-5">Ristretto Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">Dismiss</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- modal -->
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content has-background-rgba(10,10,10,.86) px-5 py-5">
+    <div class="box has-background-white">
+    <h3 class="title mb-6">Join the club</h3>
+    <form>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input type="text" class="input" placeholder="Name">
+        </div>
+        <label class="label">Email</label>
+        <div class="control">
+          <input type="text" class="input" placeholder="Email">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="">Terms & Conditions</a>
+          </label>
+        </div>
+      </div>
+      <div class="mt-6 has-text-centered">
+        <button class="button is-dark">Sign up</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="footer mx-5 ">
+  <div class="content has-text-centered">
+    <p>Copyright 2020 Coffee_Lover</p>
+  </div>
+</footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
